@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+    /* rgb(27, 47, 145) deep blue */
+    background: linear-gradient(0deg, rgb(27, 47, 145) 20%, #46a5bf 60%, rgb(27, 47, 145) 100%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    background-color: rgb(27, 47, 145);
+    color: white;
+
+}
+h1 {
+    margin-left: 12%;
+}
+
+/* Navigation styles */
+.flex-item {
+    flex-basis: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(186, 179, 72);
+    padding: 0.15em;
+}
+
+.nav.flex-container {
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.nav.flex-item {
+    flex-basis: content;
+}
+
+nav ul {
+    display: flex;
+    margin: 0.5em;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+nav li a {
+    width: 100%;
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+/* Banner image styles */
+#homebanner {
+    display: flex;
+    height: 300px;
+    background-color: radial-gradient(rgb(27, 47, 145), rgb(46, 165, 191));
+    background-image: url(../media/library-bookshelves.jpg);
+    background-repeat: no-repeat;
+    background-size: 75% 100%;
+    background-position: center;
+}
+#regionsbanner {
+    display: flex;
+    height: 300px;
+    background-image: url(../media/maps/Erde-full-map.jpg);
+    background-repeat: no-repeat;
+    background-size: 75% 100%;
+    background-position: center;
+}
+#resourcesbanner {
+    height: 300px;
+    background-image: url(../media/resources-almanac.jpg);
+    background-repeat: no-repeat;
+    background-size: 75% 100%;
+    background-position: center;
+}
+#recipesbanner {
+    height: 300px;
+    background-image: url(../media/forge.jpg);
+    background-repeat: no-repeat;
+    background-size: 75% 100%;
+    background-position: center;
+}
+
+/* More multi-page styles */
+#wrapper {
+    background-color: rgb(244, 241, 193);
+    width: 75%;
+    margin: auto;
+    border-style: groove;
+    box-shadow: 10px 10px 8px #222241;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+}
+dt {
+    font-weight: bold;
+}
+
+/* Image styles */
+img {
+    float: left;
+    max-width: 10%;
+    max-height: 10%;
+    size: contain;
+    margin-right: auto;
+}
+dd {
+    text-align: justify;
+    padding-bottom: 1em;
+    margin-left: auto;
+}
+
+/* Search bar formatting */
+#myInput {
+    background-image: url('../media/searchicon.png'); /* Add a search icon to input */
+    background-size: 20px;
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 20%;
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+/* Table formatting */
+table {
+    background-color: rgb(255, 252, 214);
+    border-collapse: collapse; /* Collapse borders */
+    border: 1px solid rgb(186, 179, 72); /* Add a border */
+    font-size: 18px; /* Increase font-size */
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%; /* Full-width */
+}
+
+#resourceTable th, #recipeTable th {
+    text-align: center; /* Center-align text */
+    padding: 8px; /* Add padding */
+    background-color: rgb(218, 209, 84);
+    border-left: 1px solid rgb(186, 179, 72); /* Add column borders */
+    border-right: 1px solid rgb(186, 179, 72);
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#resourceTable td, #recipeTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+    border-left: 1px solid rgb(186, 179, 72);  /* Add column borders */
+    border-right: 1px solid rgb(186, 179, 72);
+}
+
+#resourceTable tr, #recipeTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid rgb(186, 179, 72);
+}
+
+footer {
+    background-color: rgb(244, 241, 193);
+    font-size: .70em;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Button styles */
+.button {
+    background-color: rgb(2, 22, 126);
+    border: none;
+    border-radius: 10px;
+    padding: 1px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #0b34af;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    nav ul {flex-basis: calc(33.333% - 10px); justify-content: space-around;}
+    nav ul li {padding-left: 0; padding-right: 0;}
+    #homebanner, #regionsbanner, #resourcesbanner, #recipesbanner {width: 100%;}
+    #wrapper {width: 95%;}
+    main {padding: 20px;}
+}
+@media (min-width: 768px) {
+    nav ul {flex-basis: calc(33.333% - 10px); gap: 20px;}
+    nav ul li {padding-left: 0; padding-right: 0;}
+    #homebanner, #regionsbanner, #resourcesbanner, #recipesbanner {width: 100%;}
+    main .flex-item {flex-basis: calc(50% - 10px);}
+    main aside.flex-item {flex-grow: 1;}
+}
+@media (min-width: 1024px) {
+    main .flex-item {flex-basis: calc(33.333% - 10px);}
+}

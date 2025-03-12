@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Archive - Resources</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+        <link rel="manifest" href="media/site.webmanifest">
+        <script src="app.js"></script>
+    </head>
+    <body>
+      <header>
+          <h1>The Archive: Resources</h1>
+      </header>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="regions.html">Regions</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="recipes.html">Recipes</a></li>
+          </ul>
+      </nav>
+      <div id="resourcesbanner"></div>
+      <div id="wrapper">
+        <main class="flex-container">
+          <article class="flex-item item-text">
+            <h2>Resource Types</h2>
+            <p>The continent of Erde boasts a large variety of resources attuned to the element most prevalent in the surrounding ambient mana. In certain cases, resources can even contain saturations of multiple elements. In the Archive, resources are divided into three major categories. If you wish to delve deeper into the taxonomy of these resources, stay tuned for the "Journeyman Archivist" update, where more specific subcategories will be added. For now, however, the three major categories can be described as follows:</p>
+          </article>
+          <dl>
+              <dt>Plants</dt>
+                  <dd>
+                      A resource can be categorized as a plant if it is made of organic material, and possesses a root or root system, seeds, petals, stems, or thorns. This category includes both plants and plant-based monsters. Plants are most commonly used in alchemy and cooking.
+                  </dd>
+              <dt>Minerals</dt>
+                  <dd>
+                      A resource can be categorized as a mineral if it is made of inorganic material, and possesses a crystalline structure, a metallic luster, or electric conductivity. This category includes stone, gems, metals, and mineral-based monsters. Minerals are most commonly used in blacksmithing and construction.
+                  </dd>
+              <dt>Monster Parts</dt>
+                  <dd>
+                      A resource can be categorized as a monster part if it is a body part of a creature, or a secretion/byproduct produced by a creature. This category includes bones, hides, organs, and bodily fluids. Monster parts are used across most crafting disciplines, due to different parts of a given monster offering varying benefits.
+                  </dd>
+              <dd>To view the current catalog of resources in the Archive, refer to the table below. Clicking on the headers will sort the table by that column. Utilize the search bar if you seek a more specific array of materials.</dd>
+          </dl>
+          
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+          <table id="resourceTable">
+            <tr class="header">
+              <th style="width:15%;" onclick="sortTable('resourceTable', 0)">Name</th>
+              <th style="width:15%;" onclick="sortTable('resourceTable', 1)">Region</th>
+              <th style="width:15%;" onclick="sortTable('resourceTable', 2)">Type</th>
+              <th style="width:15%;" onclick="sortTable('resourceTable', 3)">Affinity</th>
+              <th style="width:15%" onclick="sortTable('resourceTable', 4)">Rarity</th>
+              <th style="width:15%" onclick="sortTable('resourceTable', 5)">Uses</th>
+            </tr>
+            <tr>
+              <td>Emberbloom</td>
+              <td>Prismata</td>
+              <td>Plant</td>
+              <td>Fire</td>
+              <td>1</td>
+              <td>Magic</td>
+            </tr>
+            <tr>
+              <td>Infernal Ore</td>
+              <td>Prismata</td>
+              <td>Mineral</td>
+              <td>Fire</td>
+              <td>2</td>
+              <td>Combat</td>
+            </tr>
+            <tr>
+              <td>Flameheart</td>
+              <td>Prismata</td>
+              <td>Monster Part</td>
+              <td>Fire</td>
+              <td>3</td>
+              <td>Combat</td>
+            </tr>
+            <tr>
+              <td>Red Quillreeds</td>
+              <td>Siltmire</td>
+              <td>Plant</td>
+              <td>Water</td>
+              <td>1</td>
+              <td>Utility</td>
+            </tr>
+            <tr>
+              <td>Aquamarite</td>
+              <td>Siltmire</td>
+              <td>Mineral</td>
+              <td>Water</td>
+              <td>2</td>
+              <td>Combat</td>
+            </tr>
+            <tr>
+              <td>Stalker Eel Bladder</td>
+              <td>Siltmire</td>
+              <td>Monster Part</td>
+              <td>Water</td>
+              <td>1</td>
+              <td>Magic</td>
+            </tr>
+            <tr>
+              <td>Stormpetal</td>
+              <td>Ennis Dare</td>
+              <td>Plant</td>
+              <td>Air</td>
+              <td>1</td>
+              <td>Utility</td>
+            </tr>
+            <tr>
+              <td>Aetherium</td>
+              <td>Ennis Dare</td>
+              <td>Mineral</td>
+              <td>Air</td>
+              <td>2</td>
+              <td>Combat</td>
+            </tr>
+            <tr>
+              <td>Cloudchaser Feather</td>
+              <td>Ennis Dare</td>
+              <td>Monster Part</td>
+              <td>Air</td>
+              <td>1</td>
+              <td>Magic</td>
+            </tr>
+            <tr>
+              <td>Nightshade Moss</td>
+              <td>Drosniva</td>
+              <td>Plant</td>
+              <td>Dark</td>
+              <td>3</td>
+              <td>Magic</td>
+            </tr>
+            <tr>
+              <td>Umbralite</td>
+              <td>Drosniva</td>
+              <td>Mineral</td>
+              <td>Dark</td>
+              <td>2</td>
+              <td>Combat</td>
+            </tr>
+            <tr>
+              <td>Lurker Mucus</td>
+              <td>Drosniva</td>
+              <td>Monster Part</td>
+              <td>Dark</td>
+              <td>1</td>
+              <td>Utility</td>
+            </tr>
+            <tr>
+              <td>Luminbloom</td>
+              <td>The Mistveil</td>
+              <td>Plant</td>
+              <td>Light</td>
+              <td>1</td>
+              <td>Utility</td>
+            </tr>
+            <tr>
+              <td>Starstone</td>
+              <td>The Mistveil</td>
+              <td>Mineral</td>
+              <td>Light</td>
+              <td>3</td>
+              <td>Combat</td>
+            </tr>
+            <tr>
+              <td>Twilight Moth Wing</td>
+              <td>The Mistveil</td>
+              <td>Monster Part</td>
+              <td>Light</td>
+              <td>2</td>
+              <td>Magic</td>
+            </tr>
+            <tr>
+              <td>Ironbark</td>
+              <td>Yamanobe</td>
+              <td>Plant</td>
+              <td>Earth</td>
+              <td>2</td>
+              <td>Combat</td>
+            </tr>
+            <tr>
+              <td>Petracite</td>
+              <td>Yamanobe</td>
+              <td>Mineral</td>
+              <td>Earth</td>
+              <td>3</td>
+              <td>Utility</td>
+            </tr>
+            <tr>
+              <td>Mountain Worm Tooth</td>
+              <td>Yamanobe</td>
+              <td>Monster Part</td>
+              <td>Earth</td>
+              <td>1</td>
+              <td>Magic</td>
+            </tr>
+          </table> 
+        </main>
+        <footer>
+            <p>Copyright &copy; 2025 The Archive: Cooper Knutson</p>
+            <div class="button">
+                <p><a href="mailto:cjknutson684@students.lcstate.edu">Send Feedback</a></p>
+            </div>
+        </footer>
+      </div>
+    </body>
+</html>
