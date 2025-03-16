@@ -62,7 +62,6 @@ nav li a {
 #homebanner {
     display: flex;
     height: 300px;
-    background-color: radial-gradient(rgb(27, 47, 145), rgb(46, 165, 191));
     background-image: url(../media/library-bookshelves.jpg);
     background-repeat: no-repeat;
     background-size: 75% 100%;
@@ -103,7 +102,9 @@ nav li a {
 main {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    margin-top: auto;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 article {
     display: flex;
@@ -111,6 +112,49 @@ article {
     align-items: flex-start;
     text-align: justify;
 }
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    margin-bottom: 0.5em;
+}
+
+/* Music Player styles */
+.music-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    background: #222241;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: auto;
+}
+/* 
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: rgb(27, 47, 145);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: rgb(73, 103, 255);
+    transition: 0.3s;
+}
+ */
+
 dt {
     font-weight: bold;
 }
