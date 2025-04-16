@@ -43,7 +43,14 @@
                 </aside>
                 <div class="music-player">
                     <p>Enshrined in Winter's Ice</p>
-                    <audio src="media/Enshrined-in-Winters-Ice.mp3" type="audio/mpeg" preload="auto" controls></audio>
+                    <audio src="media/Enshrined-in-Winters-Ice.mp3" type="audio/mpeg" preload="auto"></audio>
+                    <div class="controls">
+                        <button id="prev" onclick="previousSong()">Prev</button>
+                        <button id="play" onclick="playSong()">Play</button>
+                        <button id="pause" onclick="pauseSong()">Pause</button>
+                        <button id="stop" onclick="stopSong()">Stop</button>
+                        <button id="next" onclick="nextSong()">Next</button>
+                    </div>
                 </div>
                 <script src="app.js"></script>
             </main>

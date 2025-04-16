@@ -124,7 +124,7 @@ aside {
     margin: auto;
 }
 
-/* .controls {
+.controls {
     display: flex;
     gap: 10px;
 }
@@ -141,7 +141,7 @@ button {
 button:hover {
     background: rgb(73, 103, 255);
     transition: 0.3s;
-} */
+}
 
 
 dt {
