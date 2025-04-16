@@ -110,7 +110,7 @@ aside {
     margin-bottom: 0.5em;
 }
 
-/* Music Player styles */
+/* -------------- Music Player styles -------------- */
 .music-player {
     display: flex;
     align-items: center;
@@ -123,8 +123,8 @@ aside {
     width: auto;
     margin: auto;
 }
-/* 
-.controls {
+
+/* .controls {
     display: flex;
     gap: 10px;
 }
@@ -141,8 +141,8 @@ button {
 button:hover {
     background: rgb(73, 103, 255);
     transition: 0.3s;
-}
- */
+} */
+
 
 dt {
     font-weight: bold;

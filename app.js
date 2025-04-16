@@ -68,6 +68,11 @@ function sortTable(tableId, n) {
     }
 }
 
+/* I misspoke earlier. I had planned an extra page for the music player at one point, but
+   I altered my goal to keep the music player within the home page (but make it look more like an embeeded player).
+   The idea was to have a square or rectangular player with its own solid background, and it would read the track name
+   based upon the current index of the playlist. I waffled back and forth between YouTube tutorials and error-checking with ChatGPT, for errors I couldn't detect just by looking at the code. */
+
 // // Set up the audio player with the buttons to control it
 // const audio = document.getElementById("audio");
 // const playButton = document.getElementById("play");
@@ -110,5 +115,5 @@ function sortTable(tableId, n) {
 // playButton.addEventListener("click", playSong);
 // pauseButton.addEventListener("click", pauseSong);
 // stopButton.addEventListener("click", stopSong);
-// //nextButton.addEventListener("click", nextSong);
-// //previousButton.addEventListener("click", previousSong);
+// // nextButton.addEventListener("click", nextSong);
+// // previousButton.addEventListener("click", previousSong);
