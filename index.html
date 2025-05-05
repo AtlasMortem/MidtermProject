@@ -10,6 +10,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
         <link rel="manifest" href="media/site.webmanifest">
+        <script type="text/javascript" src="app.js"></script>
     </head>
     <body>
         <header>
@@ -43,7 +44,7 @@
                 </aside>
                 <div class="music-player">
                     <p>Enshrined in Winter's Ice</p>
-                    <audio src="media/Enshrined-in-Winters-Ice.mp3" type="audio/mpeg" preload="auto"></audio>
+                    <audio id="audio" src="media/winters-ice.mp3" type="audio/mpeg" preload="auto"></audio>
                     <div class="controls">
                         <button id="prev" onclick="previousSong()">Prev</button>
                         <button id="play" onclick="playSong()">Play</button>
@@ -52,7 +53,6 @@
                         <button id="next" onclick="nextSong()">Next</button>
                     </div>
                 </div>
-                <script src="app.js"></script>
             </main>
             <footer>
                 <p>Copyright &copy; 2025 The Archive: Cooper Knutson</p>
@@ -61,5 +61,6 @@
                 </div>
             </footer>
         </div>
+        <script type="text/javascript" src="musicPlayer.js"></script>
     </body>
 </html>
